@@ -1,10 +1,12 @@
 * {
-	font-family: Roboto, system-ui;
-	cursor: url('../img/sarahcursor.png'), auto; 
+	font-family: Courier New, system-ui;
+	cursor: url('../img/cursor.png'), auto; 
 }
 
 body {
-	background-color: #e8e0fd;
+	background-image: url("../img/test.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 	padding-left: 100px;
 	padding-right: 100px;
 	padding-top: 20px;
@@ -16,24 +18,26 @@ header {
 }
 
 h1 {
-  box-shadow: 0.25em 0.25em 2em rgba(0, 0, 0, 0.25);
+/*  box-shadow: 0.25em 0.25em 2em rgba(0, 0, 0, 0.25);
   border-radius: 0.5em;
   margin: 3;
-  overflow: hidden;
-}
-
-a {
-    color: #94a4c3;
-    cursor: pointer;
-    position: relative;
-}
-a:hover {
-	color: #8175ba;
+  overflow: hidden;*/
+  	background-color: #FFFF00;
 }
 
 h2 {
-	text-transform: uppercase;
 	font-size: 150%;
+}
+
+a {
+    color: #ff77ff;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+}
+a:hover {
+	background-color: yellow;
 }
 
 aside.left {
@@ -52,12 +56,36 @@ main {
 
 }
 
+#nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-top: 80px;
+}
+	
+#nav li {
+	display: inline;
+}
+
+#nav a {
+	text-decoration: none;
+	text-transform: normal;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	color: #ff77ff;
+}
+
 footer {
-	position: fixed;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: white;
   color: black;
   text-align: center;
+}
+
+summary:hover {
+	background-color: white;
 }
