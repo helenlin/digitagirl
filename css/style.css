@@ -1,12 +1,12 @@
 * {
 	font-family: Courier New, system-ui;
-	cursor: url('../img/cursor.png'), auto; 
+	cursor: crosshair; 
 }
 
 body {
 	background-image: url("../img/test2.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-size: 100%;
+	background-repeat: repeat;
 	padding-left: 100px;
 	padding-right: 100px;
 	padding-top: 20px;
@@ -31,13 +31,16 @@ h2 {
 
 a {
     color: #ff77ff;
-    background-color: white;
     cursor: pointer;
     position: relative;
     font-weight: bold;
 }
 a:hover {
 	background-color: yellow;
+}
+
+img:hover {
+	cursor: pointer;
 }
 
 aside.left {
@@ -88,4 +91,32 @@ footer {
 
 summary:hover {
 	background-color: white;
+}
+
+
+progress {
+  border: none;
+  width: 100px;
+  height: 10px;
+  background: navy;
+}
+
+progress {
+  color: #F7C9C9;
+}
+
+progress::-webkit-progress-value {
+  background: #F7C9C9;
+}
+
+progress::-moz-progress-bar {
+  background: lightcolor;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
